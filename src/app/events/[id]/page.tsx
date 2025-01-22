@@ -1,7 +1,6 @@
 "use client";
 import axios from "axios";
 import React from "react";
-import { baseURL } from "../page";
 import { useQuery } from "@tanstack/react-query";
 import DashboardLayout from "@/components/DashboardLayout";
 import { useParams, useRouter } from "next/navigation";
@@ -10,6 +9,7 @@ import { BiArrowBack } from "react-icons/bi";
 const EventDetails = () => {
   const { id } = useParams();
   const router = useRouter();
+  const baseURL = process.env.NEXT_PUBLIC_APP_SERVER_DOMAIN as string;
 
   const { data, isLoading, isError } = useQuery({
     queryKey: ["event", id],

@@ -5,7 +5,7 @@ import Table from "@/components/Table";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
-export const baseURL = process.env.NEXT_PUBLIC_APP_SERVER_DOMAIN as string;
+const baseURL = process.env.NEXT_PUBLIC_APP_SERVER_DOMAIN as string;
 
 const Events = () => {
   const { data, isLoading, isError } = useQuery({
