@@ -7,5 +7,5 @@ const fetchEvents = async () => {
 };
 
 export const useEvents = () => {
-  return useQuery(["events"], fetchEvents);
+  return useQuery({ queryKey: ["events"], queryFn: fetchEvents });
 };
