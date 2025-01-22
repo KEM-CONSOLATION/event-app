@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Events List App",
+  title: "Events List App:",
   description: "Developed By Consolation Lotachi Kem",
 };
 
